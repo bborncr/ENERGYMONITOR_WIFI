@@ -35,7 +35,7 @@ Both these libraries may be installed directly from **Tools-->Manage Libraries..
 1. At the main page click on **Adafruit IO Key**.
 1. Your Username and Active Key should be displayed (these will be used shortly).
 
-## Programming the ESP8266
+## STEP 2 Program the ESP8266
 1. Before setting the dip switches make sure the board is not connected to the USB port.
 1. Set the dip switches to: `OFF, OFF, OFF, OFF, ON, ON, ON`. See the product web site for the reference `CH340 connect to ESP8266 (upload sketch)`. Pay attention to the orientation of the board.
 1. Start the Arduino IDE. Make sure the Generic ESP8266 board is selected.
@@ -49,7 +49,7 @@ Both these libraries may be installed directly from **Tools-->Manage Libraries..
    1. WIFI_PASS: Your local WIFI password.
 1. Save the file and upload the sketch.
 
-## Testing the ESP8266
+## STEP 3 Test the ESP8266
 1. Before setting the dip switches make sure the board is disconnected.
 1. Set the dip switches to `OFF, OFF, OFF, OFF, ON, ON, OFF`. See the product web site for the reference `CH340 connect to ESP8266 (connect)`.
 1. Connect the board to the PC. Make sure that the correct serial port is selected. Open the `Serial Monitor` and select `Newline` and `115200`.
@@ -60,7 +60,7 @@ Both these libraries may be installed directly from **Tools-->Manage Libraries..
 1. Two feeds `ct1` and `ct2` should appear with their corresponding values.
 1. Now all we have to do is make an arduino sketch to send data to the ESP8266 to be published.
 
-## Programming the ATMEGA328p (Arduino UNO compatible)
+## STEP 4 Program the ATMEGA328p (Arduino UNO compatible)
 1. Before setting the dip switches make sure the board is not connected to the USB port.
 1. Set the dip switches to: `OFF, OFF, ON, ON, OFF, OFF, OFF`. See the product web site for the reference `CH340 connect to ATMEGA328 (upload sketch)`.
 1. Start the Arduino IDE. Make sure the Arduino UNO board is selected.
@@ -68,5 +68,18 @@ Both these libraries may be installed directly from **Tools-->Manage Libraries..
 1. Open the `CRCSA_ENERGY_MONITOR_WIFI_UART` sketch.
 1. No configuration is required.
 1. Upload the sketch.
+
+## STEP 5 Connect the ATMEGA328p to the ESP8266
+1. Before setting the dip switches make sure the board is not connected to the USB port.
+1. Set the dip switches to: `ON, ON, OFF, OFF, OFF, OFF, OFF`. See the product web site for the reference `MEGA328+ESP8266`.
+1. The serial port of the arduino uno compatible is now connected to the serial port of the ESP8266.
+
+## STEP 6 Install the Energy Monitor Shield and Current Transformers
+1. Install the Energy Monitor on the board.
+1. Insert the current transformers into CT1 and CT3.
+1. Connect the current transformers around the primaries of your home/office. If you are not an experienced electrician please consult a professional. The voltages and current found in the main breaker panel can easily kill.
+1. Power up the board using usb or a 9V adapter.
+
+
 
 
