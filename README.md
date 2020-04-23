@@ -16,3 +16,10 @@ The microcontroller board contains two distinct microcontrollers. The arduino un
 * Arduino UNO code: CRCSA_ENERGY_MONITOR_WIFI_UART
 * ESP8266 code: ESP8266_ADAFRUITIO_UART
 
+### Arduino IDE Preparation
+The board definition for the ESP8266 must be installed.
+
+1. Install the current Arduino IDE (1.8.12 or later). The current version is on the Arduino website.
+1. Start Arduino and open the Preferences window.
+1. Enter https://arduino.esp8266.com/stable/package_esp8266com_index.json into the Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
+1. Open Boards Manager from Tools > Board menu and install esp8266 platform (and don't forget to select your ESP8266 board from Tools > Board menu after installation).
