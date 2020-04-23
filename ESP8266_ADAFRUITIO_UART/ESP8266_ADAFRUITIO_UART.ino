@@ -32,6 +32,7 @@ void setup() {
   // we are connected
   Serial.println();
   Serial.println(io.statusText());
+  Serial.println(F("Waiting for commands..."));
   // send notification upon startup, if there are a lot of these there is a problem
   group->set("connect", 1);
   group->save();
