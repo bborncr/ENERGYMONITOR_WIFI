@@ -1,3 +1,4 @@
+//make sure the file config_example.h is renamed to config.h
 #include "config.h"
 
 // set up the group
