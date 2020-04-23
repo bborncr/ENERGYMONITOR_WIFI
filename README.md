@@ -1,5 +1,5 @@
 # ENERGYMONITOR_WIFI
-This tutorial demonstrates how to connect an arduino + esp8266 board, a energy monitor shield and two current transformers to Adafruit IO.
+This tutorial demonstrates how to connect an ATMEGA328p + esp8266 board, a energy monitor shield and two current transformers to Adafruit IO.
 
 This project is aimed at people wanting to monitor the energy consumption of a home or small office. Only current is monitored. [Adafruit IO](https://io.adafruit.com/) is used to create a simple dashboard.
 
@@ -28,5 +28,19 @@ The following libraries are required:
 * AdafruitIO Arduino
 * EmonLib
 
-Both these libraries may be installed directly from the **Tools-->Manage Libraries...**.
+Both these libraries may be installed directly from **Tools-->Manage Libraries...** in the Arduino IDE.
+
+## STEP 1 Sign up for a Adafruit IO account
+1. Go to https://io.adafruit.com and sign up for an account.
+1. At the main page click on **Adafruit IO Key**.
+1. Your Username and Active Key should be displayed (these will be used shortly).
+
+## Programming the ESP8266
+1. Before setting the dip switches make sure the board is not connected to the USB port.
+1. Set the dip switches to: OFF, OFF, OFF, OFF, ON, ON, ON. See the product web site for the reference `CH340 connect to ESP8266 (upload sketch)`. Pay attention to the orientation of the board.
+1. Start the Arduino IDE. Make sure the ESP8266 board is selected.
+1. Plug in the microcontroller board and select the correct port in the Arduino IDE.
+1. Open the `ESP8266_ADAFRUITIO_UART` sketch.
+1. Rename the `config_example.h` to `config.h`.
+1. 
 
