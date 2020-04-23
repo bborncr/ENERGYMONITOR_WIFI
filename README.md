@@ -23,3 +23,10 @@ The board definition for the ESP8266 must be installed.
 1. Start Arduino and open the Preferences window.
 1. Enter https://arduino.esp8266.com/stable/package_esp8266com_index.json into the Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
 1. Open Boards Manager from Tools > Board menu and install esp8266 platform (and don't forget to select your ESP8266 board from Tools > Board menu after installation).
+
+The following libraries are required:
+* AdafruitIO Arduino
+* EmonLib
+
+Both these libraries may be installed directly from the **Tools-->Manage Libraries...**.
+
