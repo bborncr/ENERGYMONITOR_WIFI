@@ -43,8 +43,8 @@ Both these libraries may be installed directly from **Tools-->Manage Libraries..
 1. Open the `ESP8266_ADAFRUITIO_UART` sketch.
 1. Rename the `config_example.h` to `config.h`.
 1. Edit the following constants in the `config.h` file: 
-  * IO_USERNAME: Username from the Adafruit IO Key page.
-  * IO_KEY: Active Key from the Adafruit IO Key page.
-  * WIFI_SSID: Your local WIFI SSID.
-  * WIFI_PASS: Your local WIFI password.
+   1. IO_USERNAME: Username from the Adafruit IO Key page.
+   1. IO_KEY: Active Key from the Adafruit IO Key page.
+   1. WIFI_SSID: Your local WIFI SSID.
+   1. WIFI_PASS: Your local WIFI password.
 
